@@ -1,0 +1,15 @@
+#stinky {
+    /* margin-block-start: 3em; */
+    /* margin-block-end: em; */
+}
+
+#header {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.helper {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}

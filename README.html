@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<title>Core lab.com</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="README.css">
+
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Publications</a>
+  <a href="#" class="w3-bar-item w3-button">Current Projects</a>
+  <a href="#" class="w3-bar-item w3-button">Software</a>
+</div>
+
+<div id="main">
+  <div class="w3-container w3-grey" id="header">
+    <div class="w3-bar">
+      <button id="openNav" class="w3-bar-item w3-button w3-margin-right" onclick="w3_open()">&#9776;</button>
+      <a href="#" class="w3-bar-item w3-button w3-light-grey w3-margin-right">CORE LAB</a>
+      <a href="#" class="w3-bar-item w3-button w3-light-grey w3-margin-right">Home</a>
+      <a href="#" class="w3-bar-item w3-button w3-light-grey w3-margin-right">Team Members</a>
+      <a href="#" class="w3-bar-item w3-button w3-light-grey w3-margin-right">Research</a>
+      <a href="#" class="w3-bar-item w3-button w3-light-grey w3-margin-right">Get Involved</a>
+      <a href="#" class="w3-bar-item w3-button w3-light-grey w3-margin-right">Blog</a>
+    </div>
+  </div>
+  
+
+  <div class="w3-container" id="body">
+    <div class="w3-card w3-panel w3-light-blue">
+      <div class="w3-col m4">
+        <img src="Images/text_generation_sampling.png" class="w3-round w3-border w3-cell-middle w3-margin-top w3-margin-bottom" width="100%" height="100%">
+      </div>
+      <div class="w3-col m6 w3-margin-left">
+        <h2 id="stinky">Research Project</h2>
+        <p>Hernandez et al.,</p>
+        <p>Using abstractive summarization we summarize a bunch of other research projects.</p>
+      </div>
+    </div>
+
+    <div class="w3-card w3-panel w3-light-green">
+      <div class="w3-col m4">
+        <img src="Images/text_generation_sampling.png" class="w3-round w3-border w3-cell-middle w3-margin-top w3-margin-bottom" width="100%" height="100%">
+      </div>
+      <div class="w3-col m6 w3-margin-left">
+        <h2 id="stinky">Research Project</h2>
+        <p>Hernandez et al.</p>
+        <p>This research develops an algorithm to test how cool core lab is.</p>
+      </div>
+    </div>
+
+      <div class="w3-card w3-panel w3-blue">
+        <div class="w3-col m4">
+          <img src="Images/text_generation_sampling.png" class="w3-round w3-border w3-cell-middle w3-margin-top w3-margin-bottom" width="100%" height="100%">
+        </div>
+        <div class="w3-col m6 w3-margin-left">
+          <h2 id="stinky">Research Project</h2>
+          <p>Hernandez et al.</p>
+          <p>This project looks at how cool core lab is</p>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</body>
+</html>
+
